@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job API |Login</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+           <h4 class="header_text">
+            Edit Job
+           </h4>
+           <span id="seejobs">
+            Job ID : <span id="jobid"></span>
+           </span>
+            
+           <div class="inputs">
+             <input class="input_item"  type="text" id="company" placeholder="Company">
+             <input class="input_item" type="text" id="position" placeholder="Position">
+             <input class="input_item" type="text" id="status" placeholder="Status">
+             <input class="input_item" type="text" id="date" placeholder="Date">
+           </div>
+            <div class="btns">
+                <button class="input_btn" id="updatebtn" type="submit">Update Job</button>
+            </div>
+        </div>
+    </main>
+    
+    <script src="./js/single.js"></script>
+</body>
+</html>

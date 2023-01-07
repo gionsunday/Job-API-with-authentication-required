@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job API |Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+      <nav class="navbar">
+          <h4 class="navbar_item" id="numberofjobs">Number Of Jobs: 606</h4>
+          <h4 class="navbar_item" id="user">User: </h4>
+          <a href="./index.html" style="text-decoration: none; font-size: 20px;"><button class="navbar_item" id="user" style="padding: 10px;border: 1px solid indianred; border-radius: 5px;">Logout </button></a> 
+     
+        </nav>
+      
+    <main class="main-dashboard">
+        <div class="job_container">
+            <h4 class="header_text">
+                Your Jobs
+            </h4>
+            <h4 class="nojob" style="text-align: center; color: rgb(250, 75, 75);" id="nojob">
+            </h4>
+           <div id="jobs"> 
+            <!--<article id="job">
+              <h4 class="job_item" id="company">Company : <span id="comp">Gion Dev Ops</span> </h4>
+              <h4 class="job_item" id="position">Position : <span id="pos"> Chief Programmer</span> </h4>
+              <h4 class="job_item" id="status">Status : <span id="stat">  Hired</span></h4>
+              <h4 class="job_item" id="date">Date Created : <span id="dat">05-01-2023</span> </h4>
+              <hr id="hr" style="width: 100%; margin: 20px 0px 20px 0px; height: 3px; background-color: rgb(22, 5, 70); border: none; border-radius: 15px;">
+              <div class="functionbtn" style="display: flex;">
+                <button id="editbtn"> Edit Job</button>
+                <button id="deletebtn"> Delete job</button>
+              </div>
+            </article>
+        -->
+           
+            
+        </div>
+        </div>
+    </main>
+
+
+    <main class="main-dashboard">
+        <div class="job_create">
+            <h4 class="header_text1">
+                 Create Your Dream Jobs
+            </h4>
+           
+           <div id="jobs" > 
+           
+            <input class="input_item" id="company" type="text" placeholder="Company">
+            <input class="input_item" id="position" type="text" placeholder="Position">
+            <input class="input_item" id="status" type="text" placeholder="Status">
+          
+           </div>
+           <div class="btn">
+            <button class="input_bt" id="createbtn" type="submit">Create Job</button>
+           </div>
+        </div>
+    </main>
+    
+    <script src="./js/dashboard.js"></script>
+</body>
+</html>
